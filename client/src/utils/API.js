@@ -11,7 +11,7 @@ export default {
             + APIKEY);
     },
     saveArticle:function(data){
-        return axios.post("/api/articles/");
+        return axios.post("/api/articles/",data);
     },
     getSavedArticles: function(){
         return axios.get("/api/articles/");

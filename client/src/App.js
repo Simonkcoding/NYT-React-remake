@@ -57,7 +57,7 @@ class App extends Component {
   loadSavedArticles = () => {
     API.getSavedArticles()
       .then(res =>
-        this.setState({ savedArticles: res.data, title: "", date: "", url: "" })
+        this.setState({ savedArticles: res.data})
       )
       .catch(err => console.log(err));
   };
