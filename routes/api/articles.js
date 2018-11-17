@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Article = require('../../models/Article.js')
+const Article = require('../../models/article.js')
 
 //functionality of app
 //1. get all saved article "/"
