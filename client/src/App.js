@@ -167,13 +167,14 @@ deleteSaved = (id) => {
           <CardBody>
             <ListGroup>
               {this.state.savedArticles.map(article => (
-                <ListGroupItem>
+                <ListGroupItem  key={article._id}>
                   <Button className="delete-btn"
                     color="danger"
                     size="sm"
                     onClick={() => this.deleteSaved(article._id)}
                   >Delete
                 </Button>
+               
                   {article.title}<br/>
                   URL: <br/>
                   {article.url}
